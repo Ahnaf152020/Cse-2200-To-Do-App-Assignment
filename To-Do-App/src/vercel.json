@@ -1,5 +1,13 @@
 {
-    "rewrites": [
-        {"source": "/(.*)", "destination": "/"}
+    "version": 2,
+    "builds": [
+      { "src": "index.html", "use": "@vercel/static" },
+      { "src": "Todo.css", "use": "@vercel/static" },
+      { "src": "Todo.js", "use": "@vercel/static" },
+      { "src": "images/bg2.jpg", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/index.html" }
     ]
-}
+  }
+  
